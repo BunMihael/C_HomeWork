@@ -10,22 +10,18 @@ int numberA = int.Parse(Console.ReadLine());
 
 Console.Write("Write namber B: ");
 int numberB = int.Parse(Console.ReadLine());
-int max = 0;
-int min = 0;
 
 if (numberA > numberB) 
 {
-    max = numberA; min = numberB;
-    Console.WriteLine($"The number {max} is bigger than the {min}");
+    Console.WriteLine($"The number {numberA} is bigger than the {numberB}");
 }
 else if (numberA < numberB) 
 {
-    max = numberB; min = numberA;
-    Console.WriteLine($"The number {max} is bigger than the {min}");
+    Console.WriteLine($"The number {numberB} is bigger than the {numberA}");
 }
 else
 {
-    Console.WriteLine($"Both numbers {max} and {min} are equal");
+    Console.WriteLine($"Both numbers {numberA} and {numberB} are equal");
 }
 
 
