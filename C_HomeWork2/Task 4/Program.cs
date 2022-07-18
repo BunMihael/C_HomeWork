@@ -29,12 +29,17 @@
 
 // Второй вариант решения
 
-void Checking (int N)
+void Checking(int N)
 {
-    if (N > 5)
-    Console.WriteLine("Выходной день");
-    else
+    if (N < 1)
+        Console.WriteLine($"При этом дне {N} Бг только задумывал творить мир");
+    else if (N > 7)
+        Console.WriteLine("Такого дня нет");
+    else if (N < 5) 
     Console.WriteLine("Будний день");
+    else
+        Console.WriteLine("Выходной день");
+
 }
 Console.Write("Введите номер дня недели и мы скажем выходной ли он: ");
 int n = int.Parse(Console.ReadLine());
