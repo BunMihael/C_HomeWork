@@ -9,6 +9,23 @@ Console.Write("Write three digit number here: ");
 int number = int.Parse(Console.ReadLine());
 int MidNum = 0;
 
-MidNum = number % 100;
-MidNum = LastNumb / 10;
-Console.WriteLine($"The number {MidNum} is the last number of {number}. ");
+if (number > 999)
+{
+    Console.WriteLine($"The number {number} is not a three digit number. ");
+}
+else if (number < 100)
+{
+    Console.WriteLine($"The number {number} is not a three digit number. ");
+}
+else
+{
+    MidNum = number % 100;
+    MidNum = MidNum / 10;
+    Console.WriteLine($"The number {MidNum} is the second number of {number}. ");
+}
+
+// int NumSec(int num)
+// {
+//    return num / 10 %  10  
+// }
+// Console.WriteLine(NumSec(918))
