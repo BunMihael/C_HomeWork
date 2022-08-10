@@ -8,6 +8,7 @@ void NaturDegree(int a, int b)
     { 
         nums = nums * a;
     }
-    Console.Write($"{a} в натуральной степени {b} = {nums}");
+    Console.WriteLine($"{a} в натуральной степени {b} = {nums}");
 }
 NaturDegree(3, 5);
+NaturDegree(2, 4);
