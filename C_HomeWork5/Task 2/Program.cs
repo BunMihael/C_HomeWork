@@ -33,7 +33,7 @@ int SumOfElements(int[] arr)
     {
         if (i % 2 == 1)
         {
-            count = count + arr[i];
+            count += arr[i];
         }
 
     }
