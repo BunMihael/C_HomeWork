@@ -4,15 +4,15 @@
 
 Console.WriteLine("We will find the intersection point of two stright lines");
 Console.WriteLine("Please, enter number for pont b1; ");
-int b1 = int.Parse(Console.ReadLine());
+double b1 = double.Parse(Console.ReadLine());
 Console.WriteLine("Please, enter number for pont k1; ");
-int k1 = int.Parse(Console.ReadLine());
+double k1 = double.Parse(Console.ReadLine());
 Console.WriteLine("Please, enter number for pont b2; ");
-int b2 = int.Parse(Console.ReadLine());
+double b2 = double.Parse(Console.ReadLine());
 Console.WriteLine("Please, enter number for pont k2; ");
-int k2 = int.Parse(Console.ReadLine());
+double k2 = double.Parse(Console.ReadLine());
 
-int x = (b2 - b1) / (k1 - k2);
+double x = (b2 - b1) / (k1 - k2);
 
 Console.WriteLine($"{x};{k1 * x + b1}");
 
