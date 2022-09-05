@@ -68,3 +68,25 @@ Print(arr_1);
 int[,] arr_2 = MassNums(row, column, 1, 6);
 Print(arr_2);
 ArithmeticMean(arr_1,arr_2);
+
+
+// int[,] MatrixProduct(int[,] arr_first, int[,] arr_second)
+// {
+//     int row_size = arr_first.GetLength(0);
+//     int column_size = arr_first.GetLength(1);
+//     int[,] pr_matrix = new int[row_size, column_size];
+
+//     if(column_size != arr_second.GetLength(0)) return pr_matrix;
+//     else if(column_size == arr_second.GetLength(0))
+//         pr_matrix = new int[row_size, column_size];
+    
+//     for(int i = 0; i < row_size; i++)
+//     {
+//         for(int j = 0; j < row_size; j++)
+//         {
+//             for(int p = 0; p < column_size; p++)
+//                 pr_matrix[i,j] += arr_first[i,p] *arr_second[p,j];
+//         }
+//     }
+//     return pr_matrix;
+// }
